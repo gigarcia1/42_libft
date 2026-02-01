@@ -6,7 +6,7 @@
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 17:58:01 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/01/25 07:51:43 by gigarcia         ###   ########.fr       */
+/*   Updated: 2026/02/01 07:47:40 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,9 @@ int	ft_atoi(const char *nptr);
 
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
+
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+
 #endif

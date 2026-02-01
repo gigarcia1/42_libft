@@ -1,28 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/18 10:49:28 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/01/31 22:07:37 by gigarcia         ###   ########.fr       */
+/*   Created: 2026/01/31 19:15:06 by gigarcia          #+#    #+#             */
+/*   Updated: 2026/01/31 22:15:31 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+void *ft_calloc(size_t nmemb, size_t size)
 {
-	size_t			i;
-	unsigned char	*tmp;
+	unsigned char	*buffer;
 
-	i = 0;
-	tmp = (unsigned char *)s;
-	while (i < n)
-	{
-		tmp[i] = c;
-		i++;
-	}
-	return (s);
+	if (!nmemb || !size)
+		return (NULL);
+
+	buffer = malloc(size * nmemb);
+	if (!buffer)
+		return (NULL);
+
+	return((void *)ft_memset(buffer, 0, size * nmemb);
+
+	//ask about overflow
+	//nmemb > (overflow / size)
+
 }
