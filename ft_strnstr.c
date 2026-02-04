@@ -1,37 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/01 00:35:48 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/02/04 02:04:43 by gigarcia         ###   ########.fr       */
+/*   Created: 2026/01/25 08:52:01 by gigarcia          #+#    #+#             */
+/*   Updated: 2026/02/04 03:15:38 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	unsigned char	*tmp_dest;
-	unsigned char	*tmp_src;
+	size_t	i;
+	size_t	j;
+	char	*tmp_big;
 
-	tmp_dest = (unsigned char *)dest;
-	tmp_src = (unsigned char *)src;
-	if (!n || !src || !dest)
-		return (dest);
-	if (dest <= src)
+	tmp_big = (char *)big;
+	if (!*little)
+		return (tmp_big);
+	i = 0;
+	while (big[i] && i < len)
 	{
-		while (n--)
-			*tmp_dest++ = *tmp_src++;
+		j = 0;
+		while ((i + j) < len && big[i + j] == little[j])
+		{
+			if (!little[j + 1])
+				return (tmp_big + i);
+			j++;
+		}
+		i++;
 	}
-	else
-	{
-		tmp_src += n - 1;
-		tmp_dest += n - 1;
-		while (n--)
-			*tmp_dest-- = *tmp_src--;
-	}
-	return (dest);
+	return (NULL);
 }

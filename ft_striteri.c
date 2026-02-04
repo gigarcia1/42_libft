@@ -1,37 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/01 00:35:48 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/02/04 02:04:43 by gigarcia         ###   ########.fr       */
+/*   Created: 2026/02/04 04:07:41 by gigarcia          #+#    #+#             */
+/*   Updated: 2026/02/04 04:30:11 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	unsigned char	*tmp_dest;
-	unsigned char	*tmp_src;
+	unsigned int	i;
 
-	tmp_dest = (unsigned char *)dest;
-	tmp_src = (unsigned char *)src;
-	if (!n || !src || !dest)
-		return (dest);
-	if (dest <= src)
+	if (!s || !f)
+		return ;
+	i = 0;
+	while (s[i])
 	{
-		while (n--)
-			*tmp_dest++ = *tmp_src++;
+		f(i, &s[i]);
+		i++;
 	}
-	else
-	{
-		tmp_src += n - 1;
-		tmp_dest += n - 1;
-		while (n--)
-			*tmp_dest-- = *tmp_src--;
-	}
-	return (dest);
 }
+/*
+void	ft_aux(unsigned int i, char *s)
+{
+	if (i % 2 == 0 && (*s >= 'a' && *s <= 'z'))
+		*s -= 32;
+}
+
+int main ()
+{
+	char	str[] = "Holaaaaaaaa";
+	
+	ft_striteri(str, ft_aux);
+	printf("%s\n", str);
+}*/

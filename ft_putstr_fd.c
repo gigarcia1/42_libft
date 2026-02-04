@@ -1,37 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/01 00:35:48 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/02/04 02:04:43 by gigarcia         ###   ########.fr       */
+/*   Created: 2026/02/04 04:55:05 by gigarcia          #+#    #+#             */
+/*   Updated: 2026/02/04 05:11:56 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	ft_putstr_fd(char *s, int fd)
 {
-	unsigned char	*tmp_dest;
-	unsigned char	*tmp_src;
-
-	tmp_dest = (unsigned char *)dest;
-	tmp_src = (unsigned char *)src;
-	if (!n || !src || !dest)
-		return (dest);
-	if (dest <= src)
-	{
-		while (n--)
-			*tmp_dest++ = *tmp_src++;
-	}
-	else
-	{
-		tmp_src += n - 1;
-		tmp_dest += n - 1;
-		while (n--)
-			*tmp_dest-- = *tmp_src--;
-	}
-	return (dest);
+	if (s && fd >= 0)
+		write(fd, s, ft_strlen(s));
 }
+/*
+int	main(void)
+{
+	char *mensaje = "Hola, 42 Madrid!";
+	char *error = "¡Algo ha salido mal!";
+
+	// Escribir en la terminal (Salida estándar)
+	ft_putstr_fd(mensaje, 1);
+	ft_putchar_fd('\n', 1);
+
+	// Escribir en la terminal (Salida de error)
+	ft_putstr_fd(error, 2);
+	ft_putchar_fd('\n', 2);
+
+	return (0);
+}*/
