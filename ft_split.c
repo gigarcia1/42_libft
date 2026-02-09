@@ -71,3 +71,17 @@ char	**ft_split(const char *s, char c)
 		return (NULL);
 	return (fill_words(arr, s, c, word_count));
 }
+
+int main()
+{
+	char	**arr;
+	char	s[] = "   hola como esta    jaja jeje jiii   ";
+
+		arr = ft_split(s, ' ');
+
+	for(int i = 0; arr[i] != NULL; i++)
+	{
+		printf("%s\n", arr[i]);
+	}
+	free_arr(arr);
+}
