@@ -56,16 +56,10 @@ This project was built using the following educational resources, focusing on de
 
 ### AI Usage & Ethics
 
-In alignment with the 42 crescendo approach and AI guidelines, I’ve integrated AI as a learning companion to ensure a deep understanding of the project’s foundations.
+* **Role**: AI was used exclusively as a **pedagogical mentor**.
 
+    It guided my reasoning through complex tasks before I began coding. We explored the "why" behind memory management, such as the logic required to handle overlaps in `memmove` vs `memcpy`.
 
+    It helped me learn effective control practices and how to design robust test scenarios to avoid common pitfalls.
 
-* **Role**: AI was used exclusively as a **pedagogical mentor** to help me develop tech skills without taking shortcuts.
-
-* **Scope**: 
-
-    * **Conceptual Reasoning**: It guided my reasoning through complex tasks before I began coding. We explored the "why" behind memory management, such as the logic required to handle overlaps in `memmove` vs `memcpy`.
-
-    * **Debugging & Edge Cases**: It helped me learn effective control practices and how to design robust test scenarios to avoid common pitfalls.
-
-* **Strict Constraint**: **No direct answers or code were requested or generated**. Every line of code in this repository is an original implementation based on my own reasoning, ensuring I can fully explain my work during peer evaluations.i
+    **NO direct answers or code were requested or generated**. Every line of code in this repository is an original implementation based on my own reasoning, ensuring I can fully explain my work during peer evaluations.
