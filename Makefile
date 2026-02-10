@@ -75,5 +75,6 @@ clean :
 fclean : clean
 	$(RM) $(NAME)
 
-re : clean all 
+re : fclean all 
 
+.PHONY: all clean fclean re

@@ -71,7 +71,7 @@ char	**ft_split(const char *s, char c)
 		return (NULL);
 	return (fill_words(arr, s, c, word_count));
 }
-
+/*
 int main()
 {
 	char	**arr;
@@ -84,4 +84,4 @@ int main()
 		printf("%s\n", arr[i]);
 	}
 	free_arr(arr);
-}
+}*/
