@@ -6,7 +6,7 @@
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 23:41:29 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/02/13 23:41:32 by gigarcia         ###   ########.fr       */
+/*   Updated: 2026/02/13 23:52:24 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
+	if (!lst || !f)
+		return ;
 	while (lst != NULL)
 	{
 		f(lst->content);

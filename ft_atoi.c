@@ -6,7 +6,7 @@
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/25 09:37:02 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/01/25 16:39:13 by gigarcia         ###   ########.fr       */
+/*   Updated: 2026/02/13 23:46:56 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_atoi(const char *nptr)
 
 	sign = 1;
 	result = 0;
-	while (*nptr == ' ' || *nptr == '\t')
+	while (*nptr == ' ' || (*nptr >= 9 && *nptr <= 13))
 		nptr++;
 	if (*nptr == '+' || *nptr == '-')
 	{
@@ -37,12 +37,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (sign * result);
 }
-/*
-#include <stdlib.h>
-int main()
-{
-	printf("ft_ atoi: %d\n", ft_atoi("+12 345+++"));
-	printf("atoi: %d\n", atoi("+12 345+++"));
-
-}
-*/
