@@ -14,7 +14,7 @@ The project includes a `Makefile` that handles compilation automatically.
 
 1.  **Clone the repository:**
     ```bash
-    git clone git@vogsphere-v2.42madrid.com:vogsphere/intra-uuid-31c2296a-50e4-4cbd-bbfa-ef2ad7efa23a-7217606-gigarcia
+    git clone **git_repository_url**
     cd libft
     ```
 
