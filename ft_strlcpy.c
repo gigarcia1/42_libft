@@ -6,7 +6,7 @@
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 19:34:07 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/01/18 20:56:14 by gigarcia         ###   ########.fr       */
+/*   Updated: 2026/02/13 23:23:53 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,23 +27,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (ft_strlen(src));
 }
-/*
-int main() {
-    char src[] = "Hola Mundo";
-    char dst[5];  // Búfer de destino pequeño para demostrar truncamiento
-
-    size_t len = ft_strlcpy(dst, src, sizeof(dst));
-
-    printf("Cadena copiada: %s\n", dst);
-    printf("Longitud de la cadena fuente: %zu\n", len);
-    printf("Tamaño del búfer: %zu\n", sizeof(dst));
-    printf("return: %zu\n", len);
-
-    if (len >= sizeof(dst)) {
-        printf("La cadena fue truncada.\n");
-    } else {
-        printf("La cadena se copió completamente.\n");
-    }
-
-    return 0;
-}*/

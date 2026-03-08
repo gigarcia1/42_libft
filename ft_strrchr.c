@@ -6,7 +6,7 @@
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 00:26:08 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/01/24 20:22:57 by gigarcia         ###   ########.fr       */
+/*   Updated: 2026/02/13 23:22:07 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-/*
-int	main()
-{
-	char	*str = "la vaca lola";
-
-	printf("%s\n", ft_strrchr(str, '\0'));
-}*/

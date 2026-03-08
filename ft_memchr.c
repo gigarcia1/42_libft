@@ -6,7 +6,7 @@
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/25 08:19:37 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/01/25 08:42:02 by gigarcia         ###   ########.fr       */
+/*   Updated: 2026/02/14 00:15:03 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			return (temp + i);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
 /*
 int main()

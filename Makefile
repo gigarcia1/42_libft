@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/01/18 16:53:00 by gigarcia          #+#    #+#              #
-#    Updated: 2026/02/10 04:09:42 by alcacere         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
 NAME = libft.a
@@ -33,6 +21,7 @@ SRCS =	ft_atoi.c \
 	ft_lstlast.c \
 	ft_lstnew.c \
 	ft_lstsize.c\
+	ft_lstmap.c \
 	ft_memchr.c \
 	ft_memcmp.c \
 	ft_memcpy.c \
@@ -57,7 +46,7 @@ SRCS =	ft_atoi.c \
 	ft_strtrim.c \
 	ft_substr.c \
 	ft_tolower.c \
-	ft_toupper.c \
+	ft_toupper.c
 
 OBJS = $(SRCS:.c=.o)
 

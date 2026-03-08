@@ -6,7 +6,7 @@
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 12:11:14 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/01/24 20:18:20 by gigarcia         ###   ########.fr       */
+/*   Updated: 2026/02/13 23:48:44 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	s = ft_memset(s, 0, n);
+	ft_memset(s, 0, n);
 }

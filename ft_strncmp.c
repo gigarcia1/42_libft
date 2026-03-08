@@ -6,7 +6,7 @@
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/25 06:34:21 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/01/25 08:19:10 by gigarcia         ###   ########.fr       */
+/*   Updated: 2026/02/13 23:22:48 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-/*
-int main()
-{
-	printf("%d\n", ft_strncmp("pa", "papa", 5));
-}
-*/

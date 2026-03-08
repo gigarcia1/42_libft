@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc_INCOMPLETE.c                             :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/31 19:15:06 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/02/04 02:44:03 by gigarcia         ###   ########.fr       */
+/*   Updated: 2026/02/13 23:18:23 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_memset(buffer, 0, size * nmemb);
 	return (buffer);
 }
-// malloc(0), ya que el return debe ser un puntero único que luego
-// pueda ser liberado por free(), en sistemas y arquitecturas actuales,
-// malloc devuelve un puntero válido a un bloque de solo lectura pequeño.
-// Esto para garantizar que malloc devuelva cada vez una dirección distinta
-// y así evitar devolver NULL, evitando errores de lógica en sistemas que asumen
-// que malloc devuelve NULL porque hubo un error de memoria (crash)

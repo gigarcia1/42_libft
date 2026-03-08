@@ -6,7 +6,7 @@
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 22:48:26 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/01/24 20:22:10 by gigarcia         ###   ########.fr       */
+/*   Updated: 2026/02/13 23:23:20 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-/*
-int	main()
-{
-	const char *test = "12345678";
-
-	printf("%zu\n", ft_strlen(test));
-}
-*/

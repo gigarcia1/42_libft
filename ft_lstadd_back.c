@@ -6,7 +6,7 @@
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/04 06:50:42 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/02/04 07:15:39 by gigarcia         ###   ########.fr       */
+/*   Updated: 2026/02/13 23:10:44 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,23 +20,14 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		return ;
 	if (*lst == NULL)
 	{
-		*lst = new; // *lst?, **lst?, lst?
+		*lst = new;
 		return ;
 	}
 	last = ft_lstlast(*lst);
 	last->next = new;
 	new->next = NULL;
 }
-/*
-//     lst (La dirección del puntero): Es la ubicación en memoria de la variable head 
-// de tu main. Si haces lst = new, solo cambias tu copia local de la dirección. Mal.
-//     *lst (El contenido del puntero): Es el valor real de la cabeza de la lista. 
-// Al principio es NULL. Si haces *lst = new, vas a la memoria del main y le dices: 
-// "Tu inicio ahora es este nuevo nodo". Bien.
-//     **lst (El nodo): Sería el contenido del primer nodo. Si la lista está vacía (NULL),
-//intentar acceder a **lst es un Segmentation Fault instantáneoi.
-
-int main()
+/*int main()
 {
 	t_list	*list = NULL;
 	t_list	*temp;
