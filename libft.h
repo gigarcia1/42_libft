@@ -13,20 +13,11 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-<<<<<<< HEAD
-#include <unistd.h>
-#include <stdlib.h>
-#include <stddef.h>
-#include <limits.h>
-#include <stdint.h>
-=======
 # include <unistd.h>
 # include <stdlib.h>
 # include <stddef.h>
-# include <stdio.h>
 # include <limits.h>
 # include <stdint.h>
->>>>>>> b279e4f9f7f848c345a1ea3bfe5d93e1d5f3b559
 
 typedef struct s_list
 {
