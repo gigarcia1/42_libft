@@ -6,7 +6,7 @@
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 17:58:01 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/02/13 23:35:08 by gigarcia         ###   ########.fr       */
+/*   Updated: 2026/04/26 01:41:12 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,5 +74,9 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+int		ft_issign(char c);
+int		ft_isspace(char c);
+long	ft_atol(const char *str);
 
 #endif
