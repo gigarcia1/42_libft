@@ -6,7 +6,7 @@
 /*   By: gigarcia <gigarcia@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 01:53:34 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/04/26 01:55:43 by gigarcia         ###   ########.fr       */
+/*   Updated: 2026/04/26 02:08:00 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,3 @@ long	ft_atol(const char *str)
 	}
 	return (result * sign);
 }
-
