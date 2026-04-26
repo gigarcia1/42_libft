@@ -6,7 +6,7 @@
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 17:58:01 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/04/26 09:35:54 by gigarcia         ###   ########.fr       */
+/*   Updated: 2026/04/26 18:03:19 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,19 @@ int		ft_issign(char c);
 int		ft_isspace(char c);
 long	ft_atol(const char *str);
 void	ft_bubble_sort(int *arr, int size);
-void    ft_swap(int *a, int *b);
+void	ft_swap(int *a, int *b);
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 128
+# endif
+
+typedef struct s_gnl_state
+{
+	char	*buffer;
+	size_t	capacity;
+	size_t	len;
+}	t_gnl_state;
+
+char	*get_next_line(int fd);
 
 #endif
