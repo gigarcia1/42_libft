@@ -49,7 +49,9 @@ SRCS =	ft_atoi.c \
 	ft_toupper.c \
 	ft_issign.c \
 	ft_isspace.c \
-	ft_atol.c
+	ft_atol.c \
+	ft_bubble_sort.c \
+	ft_swap.c
 
 OBJS = $(SRCS:.c=.o)
 

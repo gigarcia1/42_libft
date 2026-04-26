@@ -6,7 +6,7 @@
 /*   By: gigarcia <gigarcia@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 17:58:01 by gigarcia          #+#    #+#             */
-/*   Updated: 2026/04/26 01:41:12 by gigarcia         ###   ########.fr       */
+/*   Updated: 2026/04/26 09:35:54 by gigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,5 +78,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 int		ft_issign(char c);
 int		ft_isspace(char c);
 long	ft_atol(const char *str);
+void	ft_bubble_sort(int *arr, int size);
+void    ft_swap(int *a, int *b);
 
 #endif
